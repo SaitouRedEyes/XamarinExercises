@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3oBi_AV1", "3oBi_AV1\3oBi_AV1.csproj", "{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53D8C77-7067-473E-87F4-B0DFB60A2B7E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA08C5CE-F6CA-4C10-B32E-C721B06E638F}
+	EndGlobalSection
+EndGlobal

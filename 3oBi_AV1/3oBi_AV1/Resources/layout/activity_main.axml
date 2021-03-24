@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@android:color/black">
+
+	<TextView 
+	android:id="@+id/tvHungry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/white"
+		android:text="Comida:    "
+		android:textSize="20sp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp">
+	</TextView>
+
+	<TextView
+		android:id="@+id/tvThirsty"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textColor="@android:color/white"
+		android:text="Sede:    "
+		android:textSize="20sp"
+		android:layout_marginRight="40dp"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentRight="true">
+	</TextView>
+
+	<Button
+	android:id="@+id/btHungry"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_below="@id/tvHungry"
+	android:layout_marginTop="10dp"
+	android:layout_marginLeft="20dp"
+	android:text="Alimentar"
+	android:textSize="20sp"
+	android:textColor="@android:color/white"
+	android:background="@android:color/holo_red_dark">
+	</Button>
+	
+	<Button 
+	android:id="@+id/btThirsty"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_below="@id/tvThirsty"
+	android:layout_marginRight="35dp"
+	android:layout_marginTop="10dp"
+	android:layout_alignParentRight="true"
+	android:text="Saciar"
+	android:textSize="20sp"
+	android:textColor="@android:color/white"
+	android:background="@android:color/holo_red_dark">
+	</Button>
+	<ImageView 
+		android:id="@+id/pou"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/pou"
+		android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true">
+	</ImageView>
+
+	<Button
+	android:id="@+id/btRestart"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:textSize="20sp"
+	android:textColor="@android:color/white"
+	android:background="@android:color/holo_red_dark"
+	android:text="Reiniciar"
+	android:layout_centerHorizontal="true"
+	android:layout_marginBottom="40dp"
+	android:visibility="invisible">
+	</Button>
+</RelativeLayout>
