@@ -1,0 +1,66 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#0000ff">
+
+	<TextView
+		android:id="@+id/facebook"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="facebook"
+		android:textSize="44dp"
+		android:textColor="#ffffff"
+		android:layout_centerHorizontal="true"
+		android:paddingTop="120dp"
+		android:textStyle="bold"
+		>
+	</TextView>
+
+	<EditText
+		android:id="@+id/loginET"
+		android:layout_width="360dp"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="24sp"
+		android:background="#ffffff"
+		android:hint="Entre com seu email..."
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/facebook">
+	</EditText>
+	<EditText
+		android:id="@+id/passET"
+		android:layout_width="360dp"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:textSize="24sp"
+		android:background="#ffffff"
+		android:hint="Entre com seu pass"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/loginET">
+	</EditText>
+
+	<Button
+		android:id="@+id/loginButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="LOGIN"
+		android:layout_marginTop="20dp"
+		android:layout_below="@id/passET">
+	</Button>
+
+	<TextView
+		android:id="@+id/signUp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="sign up for facebook"
+		android:textSize="11dp"
+		android:textColor="#ffffff"
+		android:layout_centerHorizontal="true"		
+		android:textStyle="bold"
+		android:layout_below="@id/loginButton">
+	</TextView>
+
+</RelativeLayout>
