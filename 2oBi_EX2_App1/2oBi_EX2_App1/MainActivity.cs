@@ -26,32 +26,28 @@ namespace _2oBi_EX2_App1
 
             green.Click += OnGreenButtonClicked;
             blue.Click += OnBlueButtonClicked;
-            red.Click += OnRedButtonClicked;
-
-            i = new Intent("TrocaCor");
-            parameters = new Bundle();
+            red.Click += OnRedButtonClicked;                        
         }
 
         private void OnRedButtonClicked(object sender, EventArgs e)
         {
-            ChangeActivity("red");
+            ChangeActivity("red");            
         }
 
         private void OnBlueButtonClicked(object sender, EventArgs e)
         {
-            ChangeActivity("blue");
+            ChangeActivity("blue");            
         }
 
         private void OnGreenButtonClicked(object sender, EventArgs e)
         {
-            ChangeActivity("green");
+            ChangeActivity("green");            
         }
 
         private void ChangeActivity(string color)
         {
-            parameters.PutString("color", color);
-            i.PutExtras(parameters);
-
+            i = new Intent("TrocaCor");
+            i.AddCategory(color);
             StartActivity(i);
         }
     }

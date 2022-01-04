@@ -33,8 +33,7 @@ namespace _2oBi_AV1_V2
                 switch(myParameters.GetString("btn"))
                 {
                     case "yellow": mainLayout.SetBackgroundColor(new Android.Graphics.Color(255, 255, 0)); break;
-                    case "red": mainLayout.SetBackgroundColor(new Android.Graphics.Color(255, 0, 0)); break;
-                    case "blue" : mainLayout.SetBackgroundColor(new Android.Graphics.Color(0, 0, 255)); break;
+                    case "red": mainLayout.SetBackgroundColor(new Android.Graphics.Color(255, 0, 0)); break;                    
                 }
             }
         }

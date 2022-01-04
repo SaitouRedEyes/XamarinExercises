@@ -18,14 +18,23 @@ namespace EX_1
             SetContentView(Resource.Layout.activity_main);
 
             Button b1 = FindViewById<Button>(Resource.Id.b1);
+            Button b2 = FindViewById<Button>(Resource.Id.b2);
 
             b1.Click += Onb1Clicked;
-        }
+            b2.Click += Onb2Clicked;
+        }        
 
         private void Onb1Clicked(object sender, EventArgs e)
         {
-            Intent i = new Intent(this, typeof(ActivityGreen));
+            Intent i = new Intent(this, typeof(SecondActivity));            
 
+            StartActivity(i);
+        }
+
+        private void Onb2Clicked(object sender, EventArgs e)
+        {
+            Intent i = new Intent(this, typeof(ThirdActivity));
+            
             StartActivity(i);
         }
     }

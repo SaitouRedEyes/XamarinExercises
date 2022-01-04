@@ -20,16 +20,13 @@ namespace _2oBi_AV1_V2
             SetContentView(Resource.Layout.activity_main);
 
             Button btn1 = (Button)FindViewById(Resource.Id.btn1);
-            Button btn2 = (Button)FindViewById(Resource.Id.btn2);
-            Button btn3 = (Button)FindViewById(Resource.Id.btn3);
+            Button btn2 = (Button)FindViewById(Resource.Id.btn2);            
 
             btn1.Tag = "btn1";
-            btn2.Tag = "btn2";
-            btn3.Tag = "btn3";
+            btn2.Tag = "btn2";            
 
             btn1.Click += GoToSecond;
-            btn2.Click += GoToSecond;
-            btn3.Click += GoToSecond;
+            btn2.Click += GoToSecond;            
         }
 
         private void GoToSecond(object sender, EventArgs e)
@@ -40,8 +37,7 @@ namespace _2oBi_AV1_V2
             switch ((string)((Button)sender).Tag)
             {
                 case "btn1": myParameters.PutString("btn", "yellow"); break;
-                case "btn2": myParameters.PutString("btn", "red"); break;
-                case "btn3": myParameters.PutString("btn", "blue"); break;
+                case "btn2": myParameters.PutString("btn", "red"); break;                
             }
 
             i.PutExtras(myParameters);
